@@ -43,7 +43,7 @@ jobs:
 
       # 将public目录下的所有内容同步到远程服务器的nginx站点路径，注意path参数的写法，'public'和'public/'是不同的
       - name: Deploy
-        uses: burnett01/rsync-deployments@6
+        uses: burnett01/rsync-deployments@6.0.0
         with:
           switches: -avzr --delete
           path: ./public/
