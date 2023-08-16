@@ -10,25 +10,20 @@
     </head>
 
     <body>
-        <section id="archive">
-            {{ range .Data.Pages.GroupByDate "2006" }}
-            <div class="group">
-                <h3 class="key">
-                    {{ .Key }}
-                </h3>
 
+        <section class="post_list">
                 {{ range .Pages }}
-                <div class="value">
-                    <div class="date">
-                        <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time>
-                    </div>
-                    <div class="title">
+                <div class="post_index">
+                    <!-- <div class="post_date"> -->
+                    <!--     <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time> -->
+                    <!-- </div> -->
+                    <div class="post_title">
                         <a href="{{ .Permalink }}">
                             {{ .Title }}
                         </a>
 
                         {{ with .Params.tags }}
-                        <div class="tags">
+                        <div class="post_tags">
                             {{ range . }}
                             <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
                             {{ end }}
@@ -37,11 +32,7 @@
                     </div>
                 </div>
                 {{ end }}          
-            </div>
-            {{ end }}
-
-
         </section>
-    </body>
 
+    </body>
 </html>
