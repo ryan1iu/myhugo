@@ -4,7 +4,7 @@
     {{ range where .Site.RegularPages "Section" "post" }}
     <div id="home_post">
         <div id = "home_post_date">
-            {{.Date}}
+            {{ .PublishDate.Format (site.Params.dateFormatToUse | default "2006-01-02") }}
         </div>
         <div id="home_post_title">
             <a href = "{{ .RelPermalink }}">{{.Title}}</a>
