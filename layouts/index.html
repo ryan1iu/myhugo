@@ -1,9 +1,17 @@
 {{ define "main" }}
     kind {{.Kind}}
-    <section class = "home_section">
+    <section id = "home_post_list">
     {{ range where .Site.RegularPages "Section" "post" }}
-    <div>
-        <a href = "{{ .RelPermalink }}">{{.Title}}</a>
+    <div id="home_post">
+        <div id = "home_post_date">
+            {{.Date}}
+        </div>
+        <div id="home_post_title">
+            <a href = "{{ .RelPermalink }}">{{.Title}}</a>
+        </div>
+        <div id="home_post_wordcount">
+            {{.WordCount}}字
+        </div>
     </div>
     {{ end }}
     </section>
