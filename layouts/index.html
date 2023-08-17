@@ -1,38 +1,12 @@
-<!DOCTYPE html>
-<html lang="zh">
+{{ define "main" }}
+    kind {{.Kind}}
+    <section class = "home_section">
+    {{ range where .Site.RegularPages "Section" "post" }}
+    <div>
+        <a href = "{{ .RelPermalink }}">{{.Title}}</a>
+    </div>
+    {{ end }}
+    </section>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-        <title>首页</title>
-    </head>
+{{end}}
 
-    <body>
-
-        <section class="post_list">
-                {{ range .Pages }}
-                <div class="post_index">
-                    <!-- <div class="post_date"> -->
-                    <!--     <time datetime="{{ .PublishDate }}">{{ i18n "publishDateShort" . }}</time> -->
-                    <!-- </div> -->
-                    <div class="post_title">
-                        <a href="{{ .Permalink }}">
-                            {{ .Title }}
-                        </a>
-
-                        {{ with .Params.tags }}
-                        <div class="post_tags">
-                            {{ range . }}
-                            <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
-                            {{ end }}
-                        </div>
-                        {{ end}}
-                    </div>
-                </div>
-                {{ end }}          
-        </section>
-
-    </body>
-</html>
