@@ -113,6 +113,7 @@ header {
 
 .home_post_list>h2 {
   border-bottom: 4px solid #434C5E;
+  margin-bottom: 25px;
 }
 
 .home_post {
@@ -125,7 +126,7 @@ header {
   display: inline-block;
   color: #4C566A;
   min-width: 60px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .home_post_title {
@@ -142,7 +143,7 @@ header {
   background: #4C566A;
   padding: 1px 2px;
   color: #D8DEE9;
-  font-size: 0.6em;
+  font-size: 0.6rem;
   margin-right: 3px;
   border-radius: 3px;
 }
@@ -151,7 +152,7 @@ header {
   background: #D8DEE9;
   padding: 1px 2px;
   color: #4C566A;
-  font-size: 0.6em;
+  font-size: 0.6rem;
   margin-right: 3px;
   border-radius: 3px;
 }
@@ -160,7 +161,7 @@ header {
   background: #3B4252;
   padding: 1px 2px;
   color: #D8DEE9;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   margin-right: 3px;
   border-radius: 5px;
 }
@@ -169,7 +170,7 @@ header {
   background: #D8DEE9;
   padding: 1px 2px;
   color: #3B4252;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   margin-right: 3px;
   border-radius: 5px;
 }
