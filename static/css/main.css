@@ -51,7 +51,7 @@ header {
   border-color: #3B4252;
   border-radius: 5px;
   color: #D8DEE9;
-  padding: 4px 5px;
+  padding: 4px 6px;
   margin-right: 15px;
   font-size: 0.9em;
 }
@@ -78,14 +78,8 @@ footer {
   margin-top: 20px;
 }
 
-#home_last_article_container {
+#home_post_list>h2 {
   border-bottom: 4px solid #434C5E;
-  display: flex;
-  justify-content: space-between;
-}
-
-#home_last_article {
-  font-size: 1.2em;
 }
 
 #home_post {

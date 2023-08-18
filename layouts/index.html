@@ -1,14 +1,12 @@
 {{ define "main" }}
 
 <section id="home_post_list">
-    <div id="home_last_article_container">
-        <div id="home_last_article">
-            Latest Articles
-        </div>
+    <h2>
+        Latest Articles
         <div id="nav_rss">
             <i class="fa-solid fa-square-rss"></i>
         </div>
-    </div>
+    </h2>
     {{ range where .Site.RegularPages "Section" "post" }}
     <div id="home_post">
         <div id="postandtitle">
