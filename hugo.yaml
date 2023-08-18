@@ -4,12 +4,13 @@ hasCJKLanguage : true
 
 menu:
   main:
+  - name: Home
+    pageRef: /
+    weight: 10
   - name: Posts
     pageRef: /post
     weight: 10
-  - name: About
-    pageRef: /about
-    weight: 20
+  
 
 params:
   Author : "RyanLiu"
