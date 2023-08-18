@@ -1,0 +1,16 @@
+title : "孤岛🏝"
+enableEmoji : true
+hasCJKLanguage : true
+
+menu:
+  main:
+  - name: Posts
+    pageRef: /post
+    weight: 10
+  - name: About
+    pageRef: /about
+    weight: 20
+
+params:
+  Author : "RyanLiu"
+

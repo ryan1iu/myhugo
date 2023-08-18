@@ -1,22 +1,30 @@
 {{ define "main" }}
-kind {{.Kind}}
+
 <section id="home_post_list">
+    <h2>
+        Latest Articles
+    </h2>
     {{ range where .Site.RegularPages "Section" "post" }}
     <div id="home_post">
-        <div id="home_post_date">
-            {{ .PublishDate.Format (site.Params.dateFormatToUse | default "2006/01/02") }}
-        </div>
-        <div id="home_post_title">
-            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+        <div id="postandtitle">
+            <div id="home_post_date">
+                {{ .PublishDate.Format (site.Params.dateFormatToUse | default "2006/01/02") }}
+            </div>
+            <div id="home_post_title">
+                <a href="{{ .RelPermalink }}">{{.Title}}</a>
+            </div>
         </div>
         {{ with .Params.tags }}
-        <div class="tags">
+        <div id="home_post_tags">
             {{ range . }}
-            <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+            <a href="{{ " tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
         </div>
         {{ end}}
     </div>
     {{ end }}
+    <div id="read_more_button">
+        <a class="section-button" href="{{ .RelPermalink }}">View all</a>
+    </div>
 </section>
 {{end}}

@@ -3,7 +3,6 @@
     <h1 id="title">{{ .Title }}</h1>
     <div>
       <article id="content">
-        kind {{.Kind}}
         {{ .Content }}
       </article>
     </div>
@@ -31,10 +30,10 @@
     </div>
     <div>
       {{ with .PrevInSection }}
-        <a class="previous" href="{{ .Permalink }}"> {{ .Title }}</a>
+        <a class="previous" href="{{ .Permalink }}">Prev Post </a>
       {{ end }}
       {{ with .NextInSection }}
-        <a class="next" href="{{ .Permalink }}"> {{ .Title }}</a>
+        <a class="next" href="{{ .Permalink }}"> Next Post</a>
       {{ end }}
     </div>
   </aside>
