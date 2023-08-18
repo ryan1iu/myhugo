@@ -11,6 +11,14 @@ a:hover {
   color: #5E81AC;
 }
 
+.site_logo a:visited {
+  color : #2E3440;
+}
+.home_post_list a:visited {
+  color :#2E3440;
+}
+
+
 header {
   max-width: 700px;
   margin-left: auto;
@@ -40,6 +48,7 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
+
 
 .menu_item {
   background: #D8DEE9;
