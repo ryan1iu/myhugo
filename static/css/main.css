@@ -120,13 +120,6 @@ footer {
   justify-content: space-between;
 }
 
-#home_post:hover {
-  border-style: solid;
-  border-color: #D8DEE9;
-  border-radius: 5px;
-  background-color: #D8DEE9;
-}
-
 
 #home_post_date {
   display: inline-block;
@@ -151,11 +144,9 @@ footer {
   background: #4C566A;
   padding: 1px 2px;
   color: #D8DEE9;
-  font-size: 0.7em;
+  font-size: 0.6em;
   margin-right: 3px;
-  border-style: solid;
-  border-color: #4C566A;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 #home_post_tags a:hover {
   color: #5E81AC;
