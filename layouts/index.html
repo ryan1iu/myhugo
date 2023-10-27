@@ -2,7 +2,7 @@
 
 <section class="home_post_list">
     <h2>
-        Latest Articles
+        最新文章
     </h2>
     {{ range where .Site.RegularPages "Section" "post" }}
     <div class="home_post">
@@ -24,7 +24,7 @@
     </div>
     {{ end }}
     <div class="read_more_button">
-        <a class="section-button" href="{{ .RelPermalink }}">View all</a>
+        <a class="section-button" href="{{ .RelPermalink }}">更多</a>
     </div>
 </section>
 {{end}}

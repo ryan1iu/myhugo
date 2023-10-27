@@ -4,10 +4,10 @@ hasCJKLanguage : true
 
 menu:
   main:
-  - name: Home
+  - name: 主页
     pageRef: /
     weight: 10
-  - name: Posts
+  - name: 归档
     pageRef: /post
     weight: 10
   
