@@ -8,7 +8,7 @@ menu:
     pageRef: /
     weight: 10
   - name: 归档
-    pageRef: /post
+    pageRef: /posts
     weight: 10
   
 

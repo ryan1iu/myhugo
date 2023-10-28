@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+<section>
+    <div class="container">
+        <section id="articles-list">
+            {{ range $pages.GroupByDate "2006" }}
+            <section>
+                <h2>{{ .Key }}</h2>
+                <div class="posts">
+                    {{ range .Pages }}
+                    <div class="post">
+                        <a href="{{ .RelPermalink }}">
+                            <div class="post-row">
+                                {{ .Title }}
+                            </div>
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+        </section>
+    </div>
+</section>
+{{- $opts := dict "minify" hugo.IsProduction -}}
+{{ end }}
