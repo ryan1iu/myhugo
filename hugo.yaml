@@ -8,11 +8,11 @@ menu:
       pageRef: /
       weight: 10
     - name: 归档
-      pageRef: /posts
+      pageRef: /archive
       weight: 11
     - name: 关于
       pageRef: /about
       weight: 12
 
 params:
-  Author: "RyanLiu"
+  Author: "Ryan Liu"
