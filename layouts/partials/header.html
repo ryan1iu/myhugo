@@ -1,26 +1,24 @@
 <header>
-    <nav class="header_container">
-        <div class="site_logo">
-            <a href="/">
-                {{- .Site.Title -}}
-            </a>
-        </div>
-        <div class="site_nav">    
-            <div class="nav_menu">
-                {{- range .Site.Menus.main -}}
-                    {{- $url := .URL | relURL -}}
-                    {{- with .Page -}}
-                        {{- $url = .RelPermalink -}}
-                    {{- end -}}
-                    <a class="nav_menu_item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }}_active{{ end }}" href="{{ $url }}">
-                        {{ .Name }} 
-                    </a>
-                {{- end -}}
-            </div>
-            <div class="nav_rss">
-                <i class="fa-solid fa-square-rss"></i>
-            </div>
-        </div>
-
-    </nav>
+  <nav class="header_container">
+    <div class="site_logo">
+      <a href="/"> {{- .Site.Title -}} </a>
+    </div>
+    <div class="site_nav">
+      <div class="nav_menu">
+        {{- range .Site.Menus.main -}} {{- $url := .URL | relURL -}} {{- with
+        .Page -}} {{- $url = .RelPermalink -}} {{- end -}}
+        <a
+          class="nav_menu_item{{ if $.IsMenuCurrent `main` . | or ($.HasMenuCurrent `main` .) | or (eq $.RelPermalink $url) }}_active{{ end }}"
+          href="{{ $url }}"
+        >
+          {{ .Name }}
+        </a>
+        {{- end -}}
+      </div>
+      <div class="nav_rss">
+        <i class="fa-solid fa-square-rss"></i>
+      </div>
+    </div>
+  </nav>
 </header>
+
