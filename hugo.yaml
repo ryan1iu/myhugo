@@ -1,6 +1,7 @@
 title: "孤岛🏝"
 enableEmoji: true
 hasCJKLanguage: true
+baseurl: "https://liurun.life"
 
 menu:
   main:
