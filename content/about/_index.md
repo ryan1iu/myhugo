@@ -1,7 +1,7 @@
 ---
 title: "关于"
 date: 2023-10-28T11:36:52+08:00
-draft: true
+draft: false
 type: about
 ---
 
