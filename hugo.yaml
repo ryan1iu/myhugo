@@ -6,13 +6,13 @@ baseurl: "https://liurun.life"
 menu:
   main:
     - name: 主页
-      pageRef: /
+      url: /
       weight: 10
     - name: 归档
-      pageRef: /archive
+      url: /archive/
       weight: 11
     - name: 关于
-      pageRef: /about
+      url: /about/
       weight: 12
 
 params:
