@@ -2,7 +2,6 @@ title: "孤岛"
 enableEmoji: true
 hasCJKLanguage: true
 baseurl: "https://liurun.life"
-
 menu:
   main:
     - name: 主页
@@ -14,6 +13,8 @@ menu:
     - name: 关于
       url: /about/
       weight: 12
-
+markup:
+  highlight:
+    style: hrdark
 params:
   Author: "Ryan Liu"

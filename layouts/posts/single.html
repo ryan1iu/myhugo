@@ -1,21 +1,16 @@
 {{ define "main" }}
-<section id="main">
+<section id="post">
   <div>
-    <section>
-      <h4 id="date">{{ .Date.Format "Mon Jan 2, 2006" }}</h4>
-      <h5 id="wordcount">{{ .WordCount }} 字</h5>
-    </section>
-
-    <article id="content">{{ .Content }}</article>
+    <article>{{ .Content }}</article>
   </div>
+  <aside id="post_meta">
+    <div>
+      {{ with .PrevInSection }}
+      <a class="previous" href="{{ .Permalink }}">上一篇</a>
+      {{ end }} {{ with .NextInSection }}
+      <a class="next" href="{{ .Permalink }}">下一篇</a>
+      {{ end }}
+    </div>
+  </aside>
 </section>
-<aside id="meta">
-  <div>
-    {{ with .PrevInSection }}
-    <a class="previous" href="{{ .Permalink }}">上一篇</a>
-    {{ end }} {{ with .NextInSection }}
-    <a class="next" href="{{ .Permalink }}">下一篇</a>
-    {{ end }}
-  </div>
-</aside>
 {{ end }}
