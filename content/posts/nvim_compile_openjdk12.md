@@ -17,7 +17,8 @@ tags:
 在搜索过程中发现openjdk官网有一篇名为[IDE support in the JDK](https://hg.openjdk.org/jdk/jdk/raw-file/tip/doc/ide.html)的文章，其中提到`The make system can generate generic native code indexing support in the form of a Compilation Database that can be used by many different IDEs and source code indexers.`，因此只需要运行`make compile-commands`命令即可生成该文件，最后把生成的文件复制到项目根目录即可。
 
 效果如下图所示，非常丝滑。
-!(image)[https://imgse.com/i/pi17okQ]
+![image](https://imgse.com/i/pi17okQ)
+
 
 
 
