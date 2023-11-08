@@ -1,10 +1,11 @@
 ---
 title: 开发hugo主题
-date: 2023-10-27
+date: 2023-10-27T00:00:00.000Z
 draft: false
-tags: ["hugo", "主题开发"]
+tags:
+  - hugo
+  - 主题开发
 ---
-
 一个对前端门外汉的hugo主题开发日记
 
 ### 23-10-27
@@ -26,3 +27,8 @@ hugo的模板渲染逻辑有些复杂，具体可以参考[官方文档](https:/
 Hugo将模板分为两类，single page 和 list page，single 或者 list page下还会细分为各种不同类型的页面，文章页等属于single page，主页、归档页等属于List page。每一种页面都对应一个或几个模板，Hugo通过规则来约定模板页的优先级，默认使用优先级最高的页面进行渲染。
 
 如果你只写了\_default/single.html和\_default/list.html，那么所有的single页都会使用single.html进行渲染，所有的list页都会使用list.html进行渲染，所以想要使不同的list页展示不同的内容，就需要遵循hugo的规则，新建优先级更高的模板。
+
+### 23-11-2
+#### Go模板语法
+
+
