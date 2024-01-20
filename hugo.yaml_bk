@@ -16,5 +16,8 @@ menu:
 markup:
   highlight:
     style: hrdark
-params:
-  Author: "Ryan Liu"
+# params:
+#   Author: "Ryan Liu"
+params.author:
+  name: 'Ryan Liu'
+  email: 'lr164517@gmail.com'
