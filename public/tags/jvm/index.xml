@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jvm on 孤岛</title>
+    <link>http://localhost:1313/tags/jvm/</link>
+    <description>Recent content in Jvm on 孤岛</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(深入理解JVM) 使用Neovim搭配Clangd阅读和调试jdk12源码</title>
+      <link>http://localhost:1313/posts/nvim_compile_openjdk12/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nvim_compile_openjdk12/</guid>
+      <description>这里是《深入理解jvm》读书笔记，本文记录了我使用neovim并搭配clangd作为LSP server来搭建优雅的阅读和调试jdk12源码 的</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <title> 孤岛 </title>
+</head>
+
+<body><header>
+  <nav class="header_container">
+    <div class="site_logo">
+      <a href="/">孤岛</a>
+    </div>
+    <div class="site_nav">
+      <div class="nav_menu"><a
+          class="nav_menu_item"
+          href="/"
+        >
+          主页
+        </a><a
+          class="nav_menu_item"
+          href="/archive/"
+        >
+          归档
+        </a><a
+          class="nav_menu_item"
+          href="/about/"
+        >
+          关于
+        </a></div>
+      <div class="nav_rss">
+        <i class="fa-solid fa-square-rss"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div id="content">
+<section id="post">
+  <div>
+    <article><p>这里是《深入理解jvm》读书笔记，本文记录了我使用neovim并搭配clangd作为LSP server来搭建优雅的阅读和调试jdk12源码
+的方式。</p>
+<p>在默认情况下，clangd不能很好的工作，原因是无法识别include的头文件，通过查阅相关资料可知，
+clangd使用<code>compile_commands.json</code>数据库文件来包含项目中文件的flag。</p>
+<p>最初我通过使用书中所提到的CMakeLists.txt来使用cmake生成该文件，具体过程参考该
+<a href="https://gist.github.com/Strus/042a92a00070a943053006bf46912ae9">文章链接</a>，但是未能成功。</p>
+<p>在搜索过程中发现openjdk官网有一篇名为
+<a href="https://hg.openjdk.org/jdk/jdk/raw-file/tip/doc/ide.html">IDE support in the JDK</a>的文章，其中提到
+<em>The make system can generate generic native code indexing support in the form of a Compilation Database that
+can be used by many different IDEs and source code indexers.</em>，因此只需要运行</p>
+<div class="highlight"><pre tabindex="0" style="color:#1d2432;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make compile-commands
+</span></span></code></pre></div><p>命令即可生成该文件，最后把生成的文件复制到项目根目录即可。</p>
+<p>效果如下图所示，非常丝滑。
+<img src="https://z1.ax1x.com/2023/11/08/pi17okQ.png" alt="image"></p>
+</article>
+  </div>
+  <aside id="post_meta">
+    <div>
+      
+      <a class="previous" href="http://localhost:1313/posts/develop_hugo_theme/">上一篇</a>
+       
+    </div>
+  </aside>
+</section>
+</div><footer>
+  <div class="powerby">
+    Powered by Hugo | © Copyright 
+  </div>
+</footer>
+</body>
+</html>

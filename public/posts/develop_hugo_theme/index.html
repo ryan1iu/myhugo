@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  <link
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+  <title> 孤岛 </title>
+</head>
+
+<body><header>
+  <nav class="header_container">
+    <div class="site_logo">
+      <a href="/">孤岛</a>
+    </div>
+    <div class="site_nav">
+      <div class="nav_menu"><a
+          class="nav_menu_item"
+          href="/"
+        >
+          主页
+        </a><a
+          class="nav_menu_item"
+          href="/archive/"
+        >
+          归档
+        </a><a
+          class="nav_menu_item"
+          href="/about/"
+        >
+          关于
+        </a></div>
+      <div class="nav_rss">
+        <i class="fa-solid fa-square-rss"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div id="content">
+<section id="post">
+  <div>
+    <article><p>一个对前端门外汉的hugo主题开发日记</p>
+<h3 id="23-10-27">23-10-27</h3>
+<p>周末闲来无聊，开发博客主题的念头又一次涌了出来，之所以是又一次，是因为之前已经开发过一段时间了，后来因为种种事端搁置了。<del>为了防止再次搁置，计划以日记的形式将开发过程记录下来，作为对自己的督促。</del> (不出意外，还是搁置了)</p>
+<p>目前只完成了首页，后面计划依次完成文章归档页、文章页、TOC。完成这些之后基本就满足我的需要了。至于其他的需求就等到日后修修补补吧。</p>
+<p>不是很熟悉js，所幸即便不用js开发出来的效果也能够满足我的需要了，多亏了hugo，帮我做了那么多事情。</p>
+<p>开发hugo主题除了对前端开发锁涉及到的知识有所了解外，还要熟悉hugo的模板语法和页面的渲染逻辑。前端虽然会的不多，但是边查边用也足够满足我的需要了。麻烦的是后者，虽然之前在开发过程中粗略读过一遍开发文档，但无奈间隔时间有些长且hugo的文档写的实在让人难以恭维，导致我现在需要去重新看一遍Hugo文档。我打算把阅读文档之后的一些心得、总结等等一并记录于此，供以后翻阅。</p>
+<h3 id="23-10-28">23-10-28</h3>
+<h4 id="模板">模板</h4>
+<p>hugo的模板渲染逻辑有些复杂，具体可以参考<a href="https://gohugo.io/templates/lookup-order/">官方文档</a>,你不能改变Hugo的匹配规则，但是你可以通过修改自己的内容来匹配Hugo的规则。</p>
+<p>Hugo将模板分为两类，single page 和 list page，single 或者 list page下还会细分为各种不同类型的页面，文章页等属于single page，主页、归档页等属于List page。每一种页面都对应一个或几个模板，Hugo通过规则来约定模板页的优先级，默认使用优先级最高的页面进行渲染。</p>
+<p>如果你只写了_default/single.html和_default/list.html，那么所有的single页都会使用single.html进行渲染，所有的list页都会使用list.html进行渲染，所以想要使不同的list页展示不同的内容，就需要遵循hugo的规则，新建优先级更高的模板。</p>
+<h3 id="23-11-2">23-11-2</h3>
+<h4 id="go模板语法">Go模板语法</h4>
+</article>
+  </div>
+  <aside id="post_meta">
+    <div>
+       
+      <a class="next" href="http://localhost:1313/posts/nvim_compile_openjdk12/">下一篇</a>
+      
+    </div>
+  </aside>
+</section>
+</div><footer>
+  <div class="powerby">
+    Powered by Hugo | © Copyright 
+  </div>
+</footer>
+</body>
+</html>

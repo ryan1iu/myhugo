@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts_bks on 孤岛</title>
+    <link>http://localhost:1313/posts_bk/</link>
+    <description>Recent content in Posts_bks on 孤岛</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/posts_bk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SonarLint使用</title>
+      <link>http://localhost:1313/posts_bk/sonarlint%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts_bk/sonarlint%E4%BD%BF%E7%94%A8/</guid>
+      <description>安装 在IDEA插件商店搜索sonarlint,找到下图所示插件，安装即可，后续可通过右键找到并打开 基本概念 Clean Code attribute（干净代码属</description>
+    </item>
+  </channel>
+</rss>

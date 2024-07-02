@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>孤岛</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on 孤岛</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(深入理解JVM) 使用Neovim搭配Clangd阅读和调试jdk12源码</title>
+      <link>http://localhost:1313/posts/nvim_compile_openjdk12/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nvim_compile_openjdk12/</guid>
+      <description>这里是《深入理解jvm》读书笔记，本文记录了我使用neovim并搭配clangd作为LSP server来搭建优雅的阅读和调试jdk12源码 的</description>
+    </item>
+    <item>
+      <title>开发hugo主题</title>
+      <link>http://localhost:1313/posts/develop_hugo_theme/</link>
+      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/develop_hugo_theme/</guid>
+      <description>一个对前端门外汉的hugo主题开发日记 23-10-27 周末闲来无聊，开发博客主题的念头又一次涌了出来，之所以是又一次，是因为之前已经开发过一段时间了，后来</description>
+    </item>
+  </channel>
+</rss>
