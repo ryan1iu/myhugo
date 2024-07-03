@@ -37,10 +37,17 @@
       <description></description>
     </item>
     <item>
-      <title>IDEA</title>
-      <link>http://localhost:1313/tags/idea/</link>
+      <title>Hugo</title>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/idea/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>主题开发</title>
+      <link>http://localhost:1313/tags/%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E4%B8%BB%E9%A2%98%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
   </channel>

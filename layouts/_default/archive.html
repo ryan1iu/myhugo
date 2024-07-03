@@ -1,19 +1,31 @@
 {{ define "main" }} {{ $pages := where .Site.RegularPages "Type" "in"
 .Site.Params.mainSections }}
 <section>
-  <div class="container">
+  <div class="archiva_container">
     <section id="articles-list">
       {{ range $pages.GroupByDate "2006" }}
       <section>
         <h2>{{ .Key }}</h2>
-        <div class="posts">
+        <div class="archive_posts">
           {{ range .Pages }}
-          <div class="post">
-            <a href="{{ .RelPermalink }}">
-              <div class="post-row">{{ .Title }}</div>
-            </a>
-          </div>
-          {{ end }}
+            <div class="home_post">
+                <div>
+                    <div class="home_post_date">
+                    {{ .PublishDate.Format (site.Params.dateFormatToUse | default "2006/01/02") }}
+                    </div>
+                    <div class="home_post_title">
+                        <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                </div>
+            </div>
+            {{ with .Params.tags }}
+            <div class="home_post_tags">
+                {{ range . }}
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end}}
+        </div>
+        {{ end }}
         </div>
       </section>
       {{ end }}
