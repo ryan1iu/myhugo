@@ -1,7 +1,7 @@
 ---
 title: 开发hugo主题
 date: 2023-10-27T00:00:00.000Z
-draft: false
+draft: true
 tags:
   - hugo
   - 主题开发
@@ -30,6 +30,7 @@ Hugo将模板分为两类，single page 和 list page，single 或者 list page�
 
 ### 23-11-2
 #### Go模板语法
+
 
 
 
