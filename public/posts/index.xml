@@ -6,21 +6,14 @@
     <description>Recent content in Posts on 孤岛</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>(深入理解JVM) 使用Neovim搭配Clangd阅读和调试jdk12源码</title>
-      <link>http://localhost:1313/posts/nvim_compile_openjdk12/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nvim_compile_openjdk12/</guid>
-      <description>这里是《深入理解jvm》读书笔记，本文记录了我使用neovim并搭配clangd作为LSP server来搭建优雅的阅读和调试jdk12源码 的</description>
-    </item>
-    <item>
-      <title>开发hugo主题</title>
-      <link>http://localhost:1313/posts/develop_hugo_theme/</link>
-      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/develop_hugo_theme/</guid>
-      <description>一个对前端门外汉的hugo主题开发日记 23-10-27 周末闲来无聊，开发博客主题的念头又一次涌了出来，之所以是又一次，是因为之前已经开发过一段时间了，后来</description>
+      <title>Vim 实用技巧</title>
+      <link>http://localhost:1313/posts/vim_practice_skill/</link>
+      <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vim_practice_skill/</guid>
+      <description>&lt;h2 id=&#34;技巧12-双剑合璧天下无敌&#34;&gt;技巧12 双剑合璧，天下无敌&lt;/h2&gt;&#xA;&lt;p&gt;操作符+动作命令 构成一个操作。例如&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;d{motion}, d是操作符，moton是动作。daw表示删除删除一个单词，dap表示删除一个段落。&lt;/li&gt;&#xA;&lt;li&gt;c{motion}&lt;/li&gt;&#xA;&lt;li&gt;y{motion}&lt;/li&gt;&#xA;&lt;li&gt;g~{motion}，翻转大小写&lt;/li&gt;&#xA;&lt;li&gt;gu{motion},转换为小写&lt;/li&gt;&#xA;&lt;li&gt;gU{motion}， 转换为大写&lt;/li&gt;&#xA;&lt;li&gt;={motion}, 自动缩进&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;特殊规则：当同一个操作符被重复两次时表示作用于当前行&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
