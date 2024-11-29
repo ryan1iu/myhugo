@@ -1,50 +1,108 @@
-<!doctype html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" type="text/css" href="/css/main.css" />
-  <link
-    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    rel="stylesheet"
-  />
-  <title> 孤岛 </title>
-</head>
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Vim 实用技巧 - 孤岛</title><meta name="author" content="">
+<meta name="description" content="技巧12 双剑合璧，天下无敌 操作符&#43;动作命令 构成一个操作。例如
+"><meta name="keywords" content='Vim'>
+  <meta itemprop="name" content="Vim 实用技巧">
+  <meta itemprop="description" content="技巧12 双剑合璧，天下无敌 操作符&#43;动作命令 构成一个操作。例如">
+  <meta itemprop="datePublished" content="2024-10-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-10-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="550">
+  <meta itemprop="keywords" content="Vim"><meta property="og:url" content="http://localhost:1313/posts/vim_practice_skill/">
+  <meta property="og:site_name" content="孤岛">
+  <meta property="og:title" content="Vim 实用技巧">
+  <meta property="og:description" content="技巧12 双剑合璧，天下无敌 操作符&#43;动作命令 构成一个操作。例如">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-10-27T00:00:00+00:00">
+    <meta property="article:tag" content="Vim">
 
-<body><header>
-  <nav class="header_container">
-    <div class="site_logo">
-      <a href="/">孤岛</a>
-    </div>
-    <div class="site_nav">
-      <div class="nav_menu"><a
-          class="nav_menu_item"
-          href="/"
-        >
-          主页
-        </a><a
-          class="nav_menu_item"
-          href="/archive/"
-        >
-          归档
-        </a><a
-          class="nav_menu_item"
-          href="/about/"
-        >
-          关于
-        </a></div>
-      <div class="nav_rss">
-        <i class="fa-solid fa-square-rss"></i>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vim 实用技巧">
+  <meta name="twitter:description" content="技巧12 双剑合璧，天下无敌 操作符&#43;动作命令 构成一个操作。例如">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" type="text/html" href="http://localhost:1313/posts/vim_practice_skill/" title="Vim 实用技巧 - 孤岛" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Vim 实用技巧",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/posts\/vim_practice_skill\/"
+    },"genre": "posts","keywords": "Vim","wordcount":  550 ,
+    "url": "http:\/\/localhost:1313\/posts\/vim_practice_skill\/","datePublished": "2024-10-27T00:00:00+00:00","dateModified": "2024-10-27T00:00:00+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Author"
+      },"description": ""
+  }
+  </script><script src="/js/head/color-scheme.min.js"></script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="孤岛"><span class="header-title-text">孤岛</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a class="menu-link" href="/">主页</a></li><li class="menu-item">
+              <a class="menu-link" href="/archives/">归档</a></li><li class="menu-item">
+              <a class="menu-link" href="/about/">关于</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="孤岛"><span class="header-title-text">孤岛</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
       </div>
     </div>
-  </nav>
-</header>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="menu-item"><a class="menu-link" href="/">主页</a></li><li class="menu-item"><a class="menu-link" href="/archives/">归档</a></li><li class="menu-item"><a class="menu-link" href="/about/">关于</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="Switch Theme"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="Collections"></aside>
 
-<div id="content">
-<section id="post">
-  <div>
-    <article><h2 id="技巧12-双剑合璧天下无敌">技巧12 双剑合璧，天下无敌</h2>
-<p>操作符+动作命令 构成一个操作。例如</p>
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Vim 实用技巧</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Anonymous</span></span></div><div class="post-meta-line"><span title="published on 2024-10-27 00:00:00"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-10-27">2024-10-27</time></span>&nbsp;<span title="550 words"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>About 600 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>2 minutes</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#技巧12-双剑合璧天下无敌">技巧12 双剑合璧，天下无敌</a></li>
+    <li><a href="#技巧13-在插入模式中更正错误">技巧13 在插入模式中更正错误</a></li>
+    <li><a href="#技巧14-插入-普通模式">技巧14 插入-普通模式</a></li>
+    <li><a href="#技巧15-在插入模式中粘贴文本">技巧15 在插入模式中粘贴文本</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="技巧12-双剑合璧天下无敌" class="heading-element"><span>技巧12 双剑合璧，天下无敌</span>
+  <a href="#%e6%8a%80%e5%b7%a712-%e5%8f%8c%e5%89%91%e5%90%88%e7%92%a7%e5%a4%a9%e4%b8%8b%e6%97%a0%e6%95%8c" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>操作符+动作命令 构成一个操作。例如</p>
 <ul>
 <li>d{motion}, d是操作符，moton是动作。daw表示删除删除一个单词，dap表示删除一个段落。</li>
 <li>c{motion}</li>
@@ -57,34 +115,67 @@
 <p>特殊规则：当同一个操作符被重复两次时表示作用于当前行</p>
 <p>当按下操作符之后，Vim会进入一个特殊的模式被称为操作符待决模式，等待Motion，同样的，可以通过esc退出。</p>
 <p>可以自定义操作符和动作命令</p>
-<h2 id="技巧13-在插入模式中更正错误">技巧13 在插入模式中更正错误</h2>
-<p>假如在打字过程中输入了错误的单词，并且出错的位置离当前光标的位置较远，除了使用退格键之外，还有以下方式帮你快速删除</p>
+<h2 id="技巧13-在插入模式中更正错误" class="heading-element"><span>技巧13 在插入模式中更正错误</span>
+  <a href="#%e6%8a%80%e5%b7%a713-%e5%9c%a8%e6%8f%92%e5%85%a5%e6%a8%a1%e5%bc%8f%e4%b8%ad%e6%9b%b4%e6%ad%a3%e9%94%99%e8%af%af" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>假如在打字过程中输入了错误的单词，并且出错的位置离当前光标的位置较远，除了使用退格键之外，还有以下方式帮你快速删除</p>
 <ul>
 <li><!-- raw HTML omitted --> 删除前一个单词</li>
 <li><!-- raw HTML omitted --> 删至行首</li>
 </ul>
-<h2 id="技巧14-插入-普通模式">技巧14 插入-普通模式</h2>
-<p>如果想在插入模式过程中执行一些普通模式命令，通过按esc来切换模式再按i进入插入模式有些烦琐。Vim提供了特殊的<em>插入-普通模式</em>,允许我们执行一次普通模式命令之后立马返回插入模式。</p>
+<h2 id="技巧14-插入-普通模式" class="heading-element"><span>技巧14 插入-普通模式</span>
+  <a href="#%e6%8a%80%e5%b7%a714-%e6%8f%92%e5%85%a5-%e6%99%ae%e9%80%9a%e6%a8%a1%e5%bc%8f" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>如果想在插入模式过程中执行一些普通模式命令，通过按esc来切换模式再按i进入插入模式有些烦琐。Vim提供了特殊的<em>插入-普通模式</em>,允许我们执行一次普通模式命令之后立马返回插入模式。</p>
 <ul>
 <li>
 <!-- raw HTML omitted -->
 </li>
 </ul>
 <p>例如：当前光标处于窗口底部，你想要看更多的上下文，就可以通过键入<!-- raw HTML omitted -->zz，在插入-普通模式中触发这条命令。此操作完成之后就会直接回到插入模式，因此我们就可以不受中断，继续打字。</p>
-<h2 id="技巧15-在插入模式中粘贴文本">技巧15 在插入模式中粘贴文本</h2>
-<p>在插入模式中可以使用<code>&lt;C-r&gt;{register}</code>命令将指定寄存器中的文本粘贴。</p>
+<h2 id="技巧15-在插入模式中粘贴文本" class="heading-element"><span>技巧15 在插入模式中粘贴文本</span>
+  <a href="#%e6%8a%80%e5%b7%a715-%e5%9c%a8%e6%8f%92%e5%85%a5%e6%a8%a1%e5%bc%8f%e4%b8%ad%e7%b2%98%e8%b4%b4%e6%96%87%e6%9c%ac" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>在插入模式中可以使用<code>&lt;C-r&gt;{register}</code>命令将指定寄存器中的文本粘贴。</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="Updated on 2024-10-27 00:00:00">Updated on 2024-10-27&nbsp;</span>
+      </div><div class="post-info-license">
+            <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></span>
+          </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="Share on X" data-sharer="twitter" data-url="http://localhost:1313/posts/vim_practice_skill/" data-title="Vim 实用技巧" data-hashtags="Vim"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://localhost:1313/posts/vim_practice_skill/" data-hashtag="Vim"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://localhost:1313/posts/vim_practice_skill/" data-title="Vim 实用技巧"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/tags/vim/" class="post-tag" title="Tags - Vim">Vim</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div><div class="post-nav"></div>
+</div>
 </article>
-  </div>
-  <aside id="post_meta">
-    <div>
-       
-    </div>
-  </aside>
-</section>
-</div><footer>
-  <div class="powerby">
-    Powered by Hugo | © Copyright 
-  </div>
-</footer>
-</body>
+
+  <aside class="toc" id="toc-auto" aria-label="Contents"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.139.0"><img class="hugo-icon" src="/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> | Theme - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.16-f66dc32e"><img class="fixit-icon" src="/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric d-none">0%</span>
+        </div></div><div id="mask"></div><noscript>
+    <div class="noscript-warning">This website works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="preload" href="/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/lib/katex/katex.min.css"></noscript><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"version":"v0.3.16-f66dc32e"};console.log('Page config:', window.config);</script><script src="/js/theme.min.js" defer></script></body>
 </html>

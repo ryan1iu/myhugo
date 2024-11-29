@@ -2,6 +2,7 @@ title: "孤岛"
 enableEmoji: true
 hasCJKLanguage: true
 baseurl: "https://liurun.life"
+theme: "FixIt"
 menu:
   main:
     - name: 主页
